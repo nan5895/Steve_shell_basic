@@ -33,26 +33,26 @@ SeungHyunui-MacBook-Pro:~ seunghyunkang$ mv myscript.sh Practice
 
 #! /bin/bash
 
-### ECHO CMMAND
+## ECHO CMMAND
 ```sh
 echo Hello World!
 ```
 
-### VARIABLES
-## Uppercase by convention
-## letters, number, underscores
+## VARIABLES
+### Uppercase by convention
+### letters, number, underscores
 ```sh
 NAME="Steve"
 echo "My name is $NAME"
 ```
 
-### USER INPUT
+## USER INPUT
 ```sh
 read -p "Enter your name: " NAME
 echo "Hello $NAME, nice meet you!"
 ```
 
-### Simple if Statement
+## Simple if Statement
 ```sh
 if [ "$NAME" == "Steve" ]
 then
@@ -60,7 +60,7 @@ then
 fi
 ```
 
-### IF-ELSE
+## IF-ELSE
 ```sh
 if [ "$NAME" == "Steve" ]
 #then
@@ -69,7 +69,7 @@ else echo "Your name is not Steve"
 fi
 ```
 
-### ELSE-IF(elif)
+## ELSE-IF(elif)
 ```sh
 if [ "$NAME" == "Steve" ]
 then
@@ -80,7 +80,7 @@ then
 else echo "Your name is not Steve nor Rachel"
 fi
 ```
-### Comparison 
+## Comparison 
 ```sh
 NUM1=31
 NUM2=5
@@ -92,26 +92,26 @@ else
 fi
 ```
 
-### more functions
-# vall -eq val2 Returns True if the values are equal
-# vall -ne val2 Returns true if the values are not equal
-# vall -gt val2 Returns true if the val1 is greater than val2 
-# vall -ge val2 Returns true if the val1 is greater than or equal to val2
-# vall -lt val2 Returns true if the val1 is less than val2 
-# vall -le val2 Returns true if the val1 is less than or equal to val2
+## more functions
+vall -eq val2 Returns True if the values are equal
+vall -ne val2 Returns true if the values are not equal
+vall -gt val2 Returns true if the val1 is greater than val2 
+vall -ge val2 Returns true if the val1 is greater than or equal to val2
+vall -lt val2 Returns true if the val1 is less than val2 
+vall -le val2 Returns true if the val1 is less than or equal to val2
 
 
 
-#### File Condtion 
-# -d file True if the file is a directory
-# -e file True if the file exists (note that this is not particularly protable, thus -f is generallly used)
-# -f file True if the provided string is a file
-# -g file True if the group id is set on a file
-# -r file True if the file is readable
-# -s file True if the file has non-zero size
-# -u      True if the use id is set on a file
-# -w      True if the file is writable
-# -x      True if the file is an executable
+## File Condtion 
+-d file True if the file is a directory
+-e file True if the file exists (note that this is not particularly protable, thus -f is generallly used)
+-f file True if the provided string is a file
+-g file True if the group id is set on a file
+-r file True if the file is readable
+-s file True if the file has non-zero size
+-u      True if the use id is set on a file
+-w      True if the file is writable
+-x      True if the file is an executable
 
 ```sh
 FILE="test.txt"
@@ -123,7 +123,7 @@ else
 fi
 ```
 
-#### Case statement 
+## Case statement 
 ```sh
 read -p "Are you 21 or over? Y/N " ANSWER
 case "$ANSWER" in 
@@ -139,7 +139,7 @@ case "$ANSWER" in
 esac
 ```
 
-### Simple for loop
+## Simple for loop
 ```sh
 NAMES="Steve Kevin Alice Rachel"
 for NAME in $NAMES
@@ -148,7 +148,7 @@ for NAME in $NAMES
 done
 ```
 
-### For loop to rename files
+## For loop to rename files
 ```sh
 FILES=$(ls *.txt)
 NEW="new"
@@ -159,7 +159,7 @@ for FILE in $FILES
 done
 ```
 
-#### WHILE LOOP - READ through a file line by line
+## WHILE LOOP - READ through a file line by line
 ```sh
 LINE=1
 while read -r CURRENT_LINE
@@ -169,14 +169,14 @@ while read -r CURRENT_LINE
 done < "./new-1.txt"
 ```
 
-### FUNCTION
+## FUNCTION
 ```sh
 function sayHello() {
     echo "Hello World"
 }
 sayHello
 ```
-### Function with params
+## Function with params
 ```sh
 function greet() {
     echo "Hello, I am $1 and I am $2"
@@ -184,7 +184,7 @@ function greet() {
 greet "Brad" "28"
 ```
 
-### creat folder and write to a file
+## creat folder and write to a file
 ```sh
 mkdir hello 
 touch "hello/world.txt"
