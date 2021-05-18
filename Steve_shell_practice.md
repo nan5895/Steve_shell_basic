@@ -31,11 +31,12 @@ SeungHyunui-MacBook-Pro:~ seunghyunkang$ mkdir Practice
 SeungHyunui-MacBook-Pro:~ seunghyunkang$ mv myscript.sh Practice
 ```
 ---
-
-#! /bin/bash
+# Commands
 
 ## ECHO CMMAND
 ```sh
+#! /bin/bash
+
 echo Hello World!
 ```
 
@@ -43,18 +44,24 @@ echo Hello World!
 ### Uppercase by convention
 ### letters, number, underscores
 ```sh
+#! /bin/bash
+
 NAME="Steve"
 echo "My name is $NAME"
 ```
 
 ## USER INPUT
 ```sh
+#! /bin/bash
+
 read -p "Enter your name: " NAME
 echo "Hello $NAME, nice meet you!"
 ```
 
 ## Simple if Statement
 ```sh
+#! /bin/bash
+
 if [ "$NAME" == "Steve" ]
 then
     echo "Your name is Steve"
@@ -63,6 +70,8 @@ fi
 
 ## IF-ELSE
 ```sh
+#! /bin/bash
+
 if [ "$NAME" == "Steve" ]
 #then
     echo "Your name is Steve"
@@ -72,6 +81,8 @@ fi
 
 ## ELSE-IF(elif)
 ```sh
+#! /bin/bash
+
 if [ "$NAME" == "Steve" ]
 then
    echo "Your name is Steve"
@@ -83,6 +94,8 @@ fi
 ```
 ## Comparison 
 ```sh
+#! /bin/bash
+
 NUM1=31
 NUM2=5
 if [ "$NUM1" -gt "$NUM2" ]
@@ -115,6 +128,8 @@ fi
 - -x      True if the file is an executable
 
 ```sh
+#! /bin/bash
+
 FILE="test.txt"
 if [ -e "$FILE" ]
 then
@@ -126,6 +141,8 @@ fi
 
 ## Case statement 
 ```sh
+#! /bin/bash
+
 read -p "Are you 21 or over? Y/N " ANSWER
 case "$ANSWER" in 
     [yY] | [yY][eE][sS])
@@ -142,6 +159,8 @@ esac
 
 ## Simple for loop
 ```sh
+#! /bin/bash
+
 NAMES="Steve Kevin Alice Rachel"
 for NAME in $NAMES
  do 
@@ -151,6 +170,8 @@ done
 
 ## For loop to rename files
 ```sh
+#! /bin/bash
+
 FILES=$(ls *.txt)
 NEW="new"
 for FILE in $FILES
@@ -162,6 +183,8 @@ done
 
 ## WHILE LOOP - READ through a file line by line
 ```sh
+#! /bin/bash
+
 LINE=1
 while read -r CURRENT_LINE
  do
@@ -172,6 +195,8 @@ done < "./new-1.txt"
 
 ## FUNCTION
 ```sh
+#! /bin/bash
+
 function sayHello() {
     echo "Hello World"
 }
@@ -179,6 +204,8 @@ sayHello
 ```
 ## Function with params
 ```sh
+#! /bin/bash
+
 function greet() {
     echo "Hello, I am $1 and I am $2"
 }
@@ -187,6 +214,8 @@ greet "Brad" "28"
 
 ## creat folder and write to a file
 ```sh
+#! /bin/bash
+
 mkdir hello 
 touch "hello/world.txt"
 echo "hello world" >> "hello/world.txt"
