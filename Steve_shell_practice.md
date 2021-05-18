@@ -30,6 +30,7 @@ SeungHyunui-MacBook-Pro:~ seunghyunkang$ mkdir Practice
 ```sh
 SeungHyunui-MacBook-Pro:~ seunghyunkang$ mv myscript.sh Practice
 ```
+---
 
 #! /bin/bash
 
