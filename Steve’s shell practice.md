@@ -1,4 +1,4 @@
-# Steve's shell practice
+# Steve's shell practice 1 (basic)
 ## Shell
 
 Shell is a computer program which allow to run our commands, programs, and shell scripts. The shells has own st of recongnized commands and functions. if we are familiar with commands and functions, it will help us to analze large data conveniently.
