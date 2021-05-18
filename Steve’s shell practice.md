@@ -93,25 +93,25 @@ fi
 ```
 
 ## more functions
-### vall -eq val2 Returns True if the values are equal
-### vall -ne val2 Returns true if the values are not equal
-### vall -gt val2 Returns true if the val1 is greater than val2 
-### vall -ge val2 Returns true if the val1 is greater than or equal to val2
-### vall -lt val2 Returns true if the val1 is less than val2 
-### vall -le val2 Returns true if the val1 is less than or equal to val2
+- vall -eq val2 Returns True if the values are equal
+- vall -ne val2 Returns true if the values are not equal
+- vall -gt val2 Returns true if the val1 is greater than val2 
+- vall -ge val2 Returns true if the val1 is greater than or equal to val2
+- vall -lt val2 Returns true if the val1 is less than val2 
+- vall -le val2 Returns true if the val1 is less than or equal to val2
 
 
 
 ## File Condtion 
-### -d file True if the file is a directory
-### -e file True if the file exists (note that this is not particularly protable, thus -f is generallly used)
-### -f file True if the provided string is a file
-### -g file True if the group id is set on a file
-### -r file True if the file is readable
-### -s file True if the file has non-zero size
-### -u      True if the use id is set on a file
-### -w      True if the file is writable
-### -x      True if the file is an executable
+- -d file True if the file is a directory
+- -e file True if the file exists (note that this is not particularly protable, thus -f is generallly used)
+- -f file True if the provided string is a file
+- -g file True if the group id is set on a file
+- -r file True if the file is readable
+- -s file True if the file has non-zero size
+- -u      True if the use id is set on a file
+- -w      True if the file is writable
+- -x      True if the file is an executable
 
 ```sh
 FILE="test.txt"
